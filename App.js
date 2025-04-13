@@ -21,3 +21,29 @@
 //         console.log("shilesh kuamt");
 //     });
 // }
+
+
+// let form = document.querySelector("form");
+// form.addEventListener("submit",function (event){  //event submit having  
+//     // console.log("form is sumbit");
+//     // alert("form submitted");
+//     event.preventDefault();
+//     console.dir(form);
+
+//     // let user = document.querySelector("#user");
+//     // let pass = document.querySelector("#pass");
+
+//     let user = this.elements[0];
+//     let pass = this.elements[1];
+
+//     console.log(user.value);
+//     console.log(pass.value);
+
+// })
+
+let inp = document.querySelector('#text');
+let p = document.querySelector("p");
+inp.addEventListener("input",function (){
+    console.log(inp.value);
+    p.innerText = inp.value;
+})
